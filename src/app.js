@@ -3,10 +3,11 @@ const helmet = require('helmet');
 const cors = require('cors');
 // const router = require('./routes');
 const errorHandler = require('./utils/errorHandler');
+
+//---------------------------------------------------------
 require('dotenv').config();
 
 const app = express();
-
 app.use(express.json());
 app.use(helmet({
     crossOriginResourcePolicy: false,
